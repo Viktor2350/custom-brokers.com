@@ -45,6 +45,9 @@
             <div class="container">
                 <div class="header__inner">
                     <div class="header__menu">
+                        <div class="logo_header">
+                            <span>CUSTOM</span> — BROKERS
+                        </div>
                         <ul class="header__menu-list">
                             <li class="header__menu-item"><a href="#why-we">Чому ми</a></li>
                             <li class="header__menu-item"><a href="#preference">Наші переваги</a></li>
@@ -52,9 +55,6 @@
                             <li class="header__menu-item"><a href="#contacts">Контакти</a></li>
                         </ul>
                         <div class="header__phone">
-                            <div class="header__phone-title">
-                                Цілодобово
-                            </div>
                             <ul class="header__phone-list">
                                 <li class="header__phone-item"><a href="tel:380975488567">+38 (097) 548 85 67</a></li>
                                 <li class="header__phone-item"><a href="tel:380633187018">+38 (063) 318 70 18</a></li>
@@ -68,13 +68,11 @@
                         <div class="header__about-title">
                             ПОСЛУГИ МИТНОГО БРОКЕРА
                         </div>
-                        <div class="header__about-subtitle">
-                            Працюємо з усіма митницями північної України
-                        </div>
                     </div>
                 </div>
             </div>
         </header>
+    
         <section class="why-we" id="why-we">
             <div class="container">
                 <div class="why-we__inner">
@@ -84,7 +82,7 @@
                         </div>
                         <div class="blue-line"></div>
                         <div class="why-we__descr">
-                            "CUSTOM-BROKERS" - компанія з багаторічним досвідом роботи у сфері митно-брокерських послуг
+                            "CUSTOM-BROKERS" - Ми не залишаємо наших клієнтів при будь-яких ситуаціях.
                         </div>
                     </div>
                     <div class="why-we__block">
@@ -115,7 +113,7 @@
                         <div class="why-we__block-item">
                             <img src="../images/confidental.png" alt="confidental">
                             <div class="why-we__block-item__descr">
-                                Конфендейційність
+                                Конфіденційність
                             </div>
                         </div>
                         <div class="why-we__block-item">
@@ -134,6 +132,7 @@
                 </div>
             </div>
         </section>
+    
         <section class="preference" id="preference">
             <div class="container">
                 <div class="preference__inner">
@@ -167,15 +166,14 @@
                                     Проходження СЕС
                                 </div>
                             </div>
-    
-                            <div class="preference-item">
+                            <div class="preference-item ralliway-img">
                                 <img src="../images/represent_your_interests_on_the_railway.jpg" alt="represent_your_interests_on_the_railway">
                                 <div class="preference-item-title">
                                     Представляємо ваші інтереси на залізниці
                                 </div>
                             </div>
                             <div class="preference-item">
-                                <img src="../images/сustoms_clearance_of_goods_ralliway.png" alt="сustoms_clearance_of_goods_ralliway">
+                                <img src="../images/сustoms_clearance_of_goods_ralliway.png"alt="сustoms_clearance_of_goods_ralliway">
                                 <div class="preference-item-title">
                                     Розмитнення вантажів, що прямують залізницею
                                 </div>
@@ -197,6 +195,7 @@
                 </div>
             </div>
         </section>
+    
         <section class="cooperation" id="cooperation">
             <div class="container">
                 <div class="cooperation__inner">
@@ -223,7 +222,7 @@
                             </div>
                         </div>
                         <div class=" cooperation-step_up b4">
-                            <img src="../images/pay.png" alt="pay"> 
+                            <img src="../images/pay.png" alt="pay">
                             <div class="cooperation-step-text">
                                 Результат та оплата
                             </div>
@@ -232,7 +231,8 @@
                 </div>
             </div>
         </section>
-        <section class="contact-form" id="contacts">
+    
+        <section class="contact-form">
             <div class="container">
                 <div class="contact-form__inner">
                     <div class="contact-form__block">
@@ -244,10 +244,10 @@
                         </div>
                         <form class="form" method="post" id="form">
                             <div class="form__item">
-                                <input class="form__input" placeholder="Ім’я" type="text" name="name" required>
-                                <input class="form__input" placeholder="Номер телефону" type="text" name="phone" required>
+                                <input class="form__input" placeholder="Ім’я" id='name' type="text" name="name" required>
+                                <input class="form__input" id='phone' placeholder="Номер телефону" type="text" name="phone" required>
                             </div>
-                            <input class="form__input btn" type="submit" value="ЗАЛИШИТИ ЗАЯВКУ">
+                            <input class="form__input btn" id='btn' type="submit" value="ЗАЛИШИТИ ЗАЯВКУ">
                             <input type="hidden" name="act" value="order">
                         </form>
                         <div class="or">
@@ -265,28 +265,40 @@
                 </div>
             </div>
         </section>
+    
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__block1">
-                        <div class="footer__block1-title">
+                        <div class="logo_footer">
                             <span>CUSTOM</span> — BROKERS
                         </div>
                         <div class="footer__block1-descr">
-                            Київська митниця,Північна митниця, Поліська митниця, Волинська митниця, Енергетична митниця,
+                            Київська митниця, Північна митниця, Поліська митниця, Волинська митниця, Енергетична митниця,
                             Слабожанська митниця
                         </div>
                     </div>
-                    <div class="footer__block2">
-                        <div class="viber-ico">
-    
+                    <div class="social__block" id="contacts">
+                        <div class="viber">
+                            <a href="viber://chat?number=+380975488567" target="_blank"><img src="../images/viber.png" alt="viber"></a>
                         </div>
+                        <div class="tg">
+                            <a href="https://telegram.me/Andrey_broc" target="_blank"><img src="../images/telegram.png" alt="telegram"></a>
+                        </div>
+                        <div class="instagram">
+                            <a href="https://instagram.com/custom_brokerage_service" target="_blank"><img src="../images/instagram.png" alt="instagram"></a>
+                        </div>
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/100060050861945" target="_blank"><img src="../images/facebook.png" alt="facebook"></a>
+                        </div>
+                    </div>
+                    <div class="footer__block2">
                         <div class="tel_numbers">
                             <a href="tel:380975488567"> +38 (097) 548 85 67 </a>
                             <a href="tel:380633187018"> +38 (063) 318 70 18 </a>
                         </div>
                         <div class="office_location">
-                            м. Коростень, вул. Київська, буд. 21а.
+                            м. Коростень, вул. Київська, 21а.
                         </div>
                         <div class="time-working">
                             пн.- вс:<span> з 09.00 до 21.00</span>
@@ -304,7 +316,8 @@
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="./index.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/maskedinput.js"></script>
         <!-- inject:js -->
         <!-- endinject -->
     </body>
